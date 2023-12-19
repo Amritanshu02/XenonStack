@@ -17,8 +17,8 @@ const Navbar = () => {
                 </div>
                 <div className="Center"><div className="Logo">Shopsy</div></div>
                 <div className="Right">
-                    <div className="MenuItem">REGISTER</div>
-                    <div className="MenuItem">SIGN IN</div>
+                    <div className="MenuItem"><Link to="/register">REGISTER</Link></div>
+                    <div className="MenuItem"><Link to="/login">SIGN IN</Link></div>
                     <Link to="/cart">
                         <div className="MenuItem">
                             <Badge badgeContent={1} color="primary">

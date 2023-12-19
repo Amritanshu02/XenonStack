@@ -1,7 +1,10 @@
+const express = require("express");
+const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
-const http = require("http");
-const fs = require("fs");
+const authRoute = require("./routes/auth");
+const cors = require('cors');
+// const User = require("./models/User");
 
 const port = process.env.PORT || 8000;
 
@@ -11,13 +14,13 @@ mongoose.connect(process.env.MongoDB_URl).then(() => {
     console.log(e);
 })
 
-const server = http.createServer((req, res) => {
-    if (req.url === "/")
-        return res.end(home);
-    else
-        return res.end("<h1>404 Page Not Found");
-});
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cors());
 
-server.listen(port, () => {
+
+app.use("/", authRoute);
+
+app.listen(port, () => {
     console.log(`Backend server is running on port ${port}`);
 })

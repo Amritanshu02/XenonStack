@@ -35,10 +35,15 @@
 
 #Register-Agreement {
     font-size: 12px;
-    margin: 20px 0px;
+    margin: 5px 0px 20px 0px;
 }
 
-button {
+#Register-Form p {
+    font-size: 12px;
+    margin: 10px 0px;
+}
+
+#Register-Form button {
     width: 40%;
     border: none;
     padding: 15px 20px;
