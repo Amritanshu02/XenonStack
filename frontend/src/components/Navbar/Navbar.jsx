@@ -20,6 +20,8 @@ const Navbar = () => {
                     <div className="MenuItem"><Link id="Link" to="/register">REGISTER</Link></div>
                     <div className="MenuItem"><Link id="Link" to="/login">SIGN IN</Link></div>
                     <div className="MenuItem"><Link id="Link" to="/contact">CONTACT US</Link></div>
+                    <div className="MenuItem">REGISTER</div>
+                    <div className="MenuItem">SIGN IN</div>
                     <Link to="/cart">
                         <div className="MenuItem">
                             <Badge badgeContent={1} color="primary">
