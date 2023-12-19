@@ -54,6 +54,11 @@
     margin-left: 25px;
 }
 
+.MenuItem #Link {
+    text-decoration: none;
+    color: black;
+}
+
 @media (max-width: 663px) {
     .Container {
         height: 50px;

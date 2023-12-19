@@ -17,6 +17,9 @@ const Navbar = () => {
                 </div>
                 <div className="Center"><div className="Logo">Shopsy</div></div>
                 <div className="Right">
+                    <div className="MenuItem"><Link id="Link" to="/register">REGISTER</Link></div>
+                    <div className="MenuItem"><Link id="Link" to="/login">SIGN IN</Link></div>
+                    <div className="MenuItem"><Link id="Link" to="/contact">CONTACT US</Link></div>
                     <div className="MenuItem">REGISTER</div>
                     <div className="MenuItem">SIGN IN</div>
                     <Link to="/cart">
